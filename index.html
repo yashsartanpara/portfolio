@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <title>Personal Portfolio</title>
 
-    <script src='./js/jquery.min.js'></script>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
-    <script src='./js/materialize.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
@@ -16,157 +18,186 @@
 </head>
 
 
-
 <body>
 <div id="fullpage">
-<div class="starsHeight">
-    <div class="navbar-fixed">
-    <nav class='indigo'>
-        <div class="nav-wrapper">
+    <div class="starsHeight">
+        <header>
+            <nav class='indigo'>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo"><img src="./images/dog.png" alt="CaptainTorch" height="65" ></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">PortFolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
 
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
+                </div>
+            </nav>
+            <ul class="sidenav" id="mobile-demo">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">PortFolio</a></li>
-                <li><a href="#footer">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">PortFolio</a></li>
-                <li><a href="#footer">Contact</a></li>
-            </ul>
+        </header>
+        <div class="stars">
         </div>
-    </nav>
-    </div>
-    <div class="stars">
-    </div>
-    <div class="stars2">
-    </div>
-    <div class="stars3">
-    </div>
+        <div class="stars2">
+        </div>
+        <div class="stars3">
+        </div>
 
 
+        <div id="home" class="center text-white container">
+            <div class='flow-text row'>
+                <h1>Yash Sartanpara</h1>
+                <hr>
+                Front end Developer
+            </div>
 
-    <div id="home" class="center text-white section scrollspy">
-        <div class='flow-text'>
-            <h1>Yash Sartanpara</h1>
-            <hr>
-            Front end Developer
+            <div class="row">
+                <div class="col s12">
+                    <a target='_blank' href='https://www.linkedin.com/in/yash-sartanpara-ab3585138/'
+                       class="btn-floating social linkedin">
+                        <i class="fa fa-linkedin"></i></a>
+                    <a target='_blank' href='https://github.com/yashsartanpara'
+                       class="btn-floating social github">
+                        <i class="fa fa-github"></i> </a>
+                    <a target='_blank' href='https://stackoverflow.com/users/8894908/yash-sartanpara'
+                       class="btn-floating social">
+                        <i class="fa fa-stack-overflow"></i> </a>
+                    <a target='_blank' href='mailto:yashsartanpara@gmail.com' class="btn-floating social google">
+                        <i class="fa fa-google"></i> </a>
+                    <a target='_blank' href='https://facebook.com/yashsartanpara' class="btn-floating social facebook">
+                        <i class="fa fa-facebook"></i> </a>
+                    <a target='_blank' href='https://codepen.io/yashsartanpara' class="btn-floating social codepen">
+                        <i class="fa fa-codepen"></i> </a>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
 
-    <div id='about' class="center text-azure section scrollspy">
-        <div  class='flow-text '>
+    <div id='about' class="center-align text-azure">
+        <div class='container '>
             <h2>About</h2>
             <hr class="hr2">
-            <b>Hello, myself Yash.I am UI Developer.</b><br>
-            I like to work with latest technologies to create and design UI for websites.<br>
-            I’m truly passionate about my work and always eager to connect with other Colleagues.<br>
-            I’m always interested in hearing from former colleagues, managers, or<br>
-            just interesting creative folk, so feel free to contact me if you’d like to connect.<br>
+            <p><b>Hello, myself Yash. I am a Frontend web Developer.</b></p>
+
+            <p>I like to work with latest technologies to create and design UI for websites.
+                I’m truly passionate about my work and always eager to connect with other Colleagues.
+                I’m always interested in hearing from former colleagues, managers, or
+                just interesting creative folk, so feel free to contact me if you’d like to connect.</p>
 
         </div>
     </div>
-    <div id='portfolio' class="section text-white scrollspy center">
-        <div class="flow-text" style="padding-bottom: 2rem">
-            Portfolio
+    <div id='portfolio' class="container center">
+        <div class="projects">
+            <h3>Projects</h3>
         </div>
         <div class="row">
-            <div class="col l3 offset-l3">
+            <div class="col l3 m12 s12">
                 <div class="card">
                     <div class="card-image">
-                        <img src="./images/gen.png"></img>
+                        <img class="responsive-image" src="./images/udaan.png">
                     </div>
 
-                    <div class="card-action">
+                    <div class="card-action hoverable">
+                        <a target='_blank' href="https://udaan.captaintorch.tech">Udaan18</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m12 s12 ">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/live.png">
+                    </div>
+
+                    <div class="card-action hoverable">
+                        <a target='_blank' href="https://livecharts.captaintorch.tech">Live charts</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m12 s12">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="responsive-image" src="./images/gen.png">
+                    </div>
+
+                    <div class="card-action hoverable">
                         <a target='_blank' href="https://github.com/bvmites/udaan17-website">Genesis17</a>
                     </div>
                 </div>
             </div>
-            <div class="col l3 ">
+            <div class="col l3 m12 s12 ">
                 <div class="card">
                     <div class="card-image">
-                        <img src="./images/genms.png"></img>
+                        <img src="./images/genms.png">
                     </div>
 
-                    <div class="card-action">
-                        <a target='_blank' href="https://github.com/bvmites/genesis17-messaging-app">Genesis17 Messaging App</a>
+                    <div class="card-action hoverable">
+                        <a target='_blank' href="https://github.com/bvmites/genesis17-messaging-app">Genesis17 Messaging
+                            App</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col l3">
+            <div class="col l3 m12 s12">
                 <div class="card">
                     <div class="card-image">
-                        <img src="./images/quote.png"></img>
+                        <img src="./images/quote.png">
                     </div>
 
-                    <div class="card-action">
+                    <div class="card-action hoverable">
                         <a target='_blank' href="https://codepen.io/yashsartanpara/full/qXymBB/">Random Quote
                             Generator</a>
                     </div>
                 </div>
             </div>
-            <div class="col l3">
+            <div class="col l3 m12 s12">
                 <div class="card">
                     <div class="card-image">
-                        <img src="./images/weatherapp.png"></img>
+                        <img src="./images/weatherapp.png">
                     </div>
 
-                    <div class="card-action">
+                    <div class="card-action hoverable">
                         <a target='_blank' href="https://codepen.io/yashsartanpara/full/YxjpBr/">Weather App</a>
                     </div>
                 </div>
             </div>
-            <div class="col l3">
+            <div class="col l3 m12 s12">
                 <div class="card">
                     <div class="card-image">
-                        <img src="./images/wikipedia.png"></img>
+                        <img src="./images/wikipedia.png">
                     </div>
 
-                    <div class="card-action">
+                    <div class="card-action hoverable">
                         <a target='_blank' href="https://codepen.io/yashsartanpara/full/OxJPBL/">Wikipedia Viewer</a>
                     </div>
                 </div>
             </div>
-            <div class="col l3">
+            <div class="col l3 m12 s12">
                 <div class="card">
                     <div class="card-image">
-                        <img src="./images/jscalc.png"></img>
+                        <img src="./images/pixel.png">
                     </div>
 
-                    <div class="card-action">
-                        <a target='_blank' href="https://codepen.io/yashsartanpara/full/VMZJvK/">Calculator</a>
+                    <div class="card-action hoverable">
+                        <a target='_blank' href="https://codepen.io/yashsartanpara/full/YLYPpJ/">Pixel art maker</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<div id="footer">
-
-    <div class="row">
-        <h3>Contact</h3>
-        <div class="col l12">
-        <a target='_blank' href='https://www.linkedin.com/in/yash-sartanpara-ab3585138/' class="btn-floating social linkedin">
-            <i class="fa fa-linkedin"></i></a>
-        <a target='_blank' href='https://github.com/yashsartanpara' class="black btn-floating social github">
-            <i class="fa fa-github"></i> </a>
-        <a target='_blank' href='https://stackoverflow.com/users/8894908/yash-sartanpara' class="btn-floating social">
-            <i class="fa fa-stack-overflow"></i> </a>
-        <a target='_blank' href='mailto:yashsartanpara@gmail.com' class="black btn-floating social">
-            <i class="fa fa-google"></i> </a>
-        <a target='_blank' href='https://facebook.com/yashsartanpara' class="btn-floating social facebook">
-            <i class="fa fa-facebook"></i> </a>
-        <a target='_blank' href='https://codepen.io/yashsartanpara' class="btn-floating social black">
-            <i class="fa fa-codepen"></i> </a>
+    <footer>
+        <div class="center-align">
+            <p class="footerContent">Yash Sartanpara ©</p>
         </div>
-</div>
-</div>>
+    </footer>
 
 </div>
 </body>

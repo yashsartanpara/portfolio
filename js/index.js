@@ -1,7 +1,5 @@
-    $(document).ready(function(){
-        $(".button-collapse").sideNav();
-
-        $('.scrollspy').scrollSpy({
-            scrollOffset: 0
-        });
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var options= {};
+    var instances = M.Sidenav.init(elems, options);
+});
