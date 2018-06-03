@@ -5,6 +5,7 @@ nav ul a.active {
 body {
     background: white;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .row {
