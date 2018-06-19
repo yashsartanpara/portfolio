@@ -59,6 +59,7 @@ hr {
 }
 
 nav {
+    z-index: 100;
     position: fixed;
 }
 
@@ -89,7 +90,7 @@ nav {
 }
 
 .projects {
-    margin:0 0 40px 0;
+    margin: 0 0 40px 0;
     color: brown;
 }
 
