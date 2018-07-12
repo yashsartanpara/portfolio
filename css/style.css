@@ -35,6 +35,10 @@ hr {
     color: azure;
 }
 
+a:visited {
+    color: white !important;
+}
+
 #resume a {
     color: white !important;
 }
